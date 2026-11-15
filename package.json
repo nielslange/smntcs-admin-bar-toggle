@@ -1,0 +1,30 @@
+{
+	"name": "smntcs-admin-bar-toggle",
+	"description": "Show or hide the admin bar on the frontend with a keyboard shortcut, without leaving a gap.",
+	"author": "Niels Lange",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"Plugin",
+		"SMNTCS Admin Bar Toggle"
+	],
+	"homepage": "https://github.com/nielslange/smntcs-admin-bar-toggle#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nielslange/smntcs-admin-bar-toggle.git"
+	},
+	"bugs": {
+		"url": "https://github.com/nielslange/smntcs-admin-bar-toggle/issues"
+	},
+	"devDependencies": {
+		"npm-run-all2": "^9.0.3"
+	},
+	"scripts": {
+		"build:zip": "bash ./bin/build-zip.sh",
+		"test": "npm-run-all --parallel phpcs phplint psalm",
+		"phpcbf": "composer run phpcbf",
+		"phpcs": "composer run phpcs",
+		"phplint": "composer run phplint",
+		"psalm": "composer run psalm"
+	}
+}
