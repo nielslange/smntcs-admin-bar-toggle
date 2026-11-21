@@ -40,3 +40,5 @@ pnpm-workspace.yaml
 psalm.xml
 README.md
 tsconfig.json
+/assets/icon*
+/assets/banner-*
